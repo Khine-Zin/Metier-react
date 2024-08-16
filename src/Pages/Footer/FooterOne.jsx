@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {FaFacebook,FaInstagram,FaTwitter,FaWhatsapp} from "react-icons/fa";
+import { FaPlus } from 'react-icons/fa';
 
 const FooterOne = () => {
     return (
@@ -41,7 +42,7 @@ const FooterOne = () => {
                                     <h4>Subscribe</h4>
                                     <form action="#">
                                         <input type="email" placeholder="Email Address" required />
-                                        <button type="submit"><i className="fal fa-hand-pointer"></i></button>
+                                        <button type="submit"><FaPlus/></button>
                                     </form>
                                 </div>
                             </div>
