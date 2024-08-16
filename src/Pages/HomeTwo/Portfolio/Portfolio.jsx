@@ -1,5 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import portfolio from "../../../assets/img/portfolio1.jpeg"
+import portfolio2 from "../../../assets/img/portfolio2.webp"
+import portfolio3 from "../../../assets/img/portfolio3.jpg"
+import portfolio4 from "../../../assets/img/portfolio4.jpg"
 
 const Portfolio = () => {
     return (
@@ -17,7 +21,7 @@ const Portfolio = () => {
                     <div className="col-xl-4 col-lg-4 lg-mb-30">
                         <div className="portfolio__area-item">
                             <div className="portfolio__area-item-image">
-                                <img className="img__full" src="assets/img/portfolio/portfolio-1.jpg" alt="" />
+                                <img className="img__full" src={portfolio} alt="" />
                                 <div className="portfolio__area-item-image-content">
                                     <div className="portfolio__area-item-image-content-text"> 
                                         <span>Photography</span>
@@ -30,7 +34,7 @@ const Portfolio = () => {
                     <div className="col-xl-8 col-lg-8">
                         <div className="portfolio__area-item">
                             <div className="portfolio__area-item-image">
-                                <img className="img__full" src="assets/img/portfolio/portfolio-2.jpg" alt="" />
+                                <img className="img__full" src={portfolio2} alt="" />
                                 <div className="portfolio__area-item-image-content">
                                     <div className="portfolio__area-item-image-content-text"> 
                                         <span>Photography</span>
@@ -45,7 +49,7 @@ const Portfolio = () => {
                     <div className="col-xl-8 col-lg-8 lg-mb-30">
                         <div className="portfolio__area-item">
                             <div className="portfolio__area-item-image">
-                                <img className="img__full" src="assets/img/portfolio/portfolio-3.jpg" alt="" />
+                                <img  className="img__full" src={portfolio3} alt="" />
                                 <div className="portfolio__area-item-image-content">
                                     <div className="portfolio__area-item-image-content-text"> 
                                         <span>Photography</span>
@@ -58,7 +62,7 @@ const Portfolio = () => {
                     <div className="col-xl-4 col-lg-4">
                         <div className="portfolio__area-item">
                             <div className="portfolio__area-item-image">
-                                <img className="img__full" src="assets/img/portfolio/portfolio-4.jpg" alt="" />
+                                <img className="img__full" src={portfolio4} alt="" />
                                 <div className="portfolio__area-item-image-content">
                                     <div className="portfolio__area-item-image-content-text"> 
                                         <span>Photography</span>
