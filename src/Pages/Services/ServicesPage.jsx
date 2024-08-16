@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import FooterThree from '../Footer/FooterThree';
 import Header from '../Header/HeaderTwo';
-import bannerBg from '../../assets/img/video-1.jpg';
+import bannerImage from '../../assets/img/video-1.png';
 import Video from '../HomeOne/Video/Video';
 import { pageTitle } from '../PageTitle';
 import {GoGraph} from "react-icons/go";
@@ -174,7 +174,8 @@ const ServicesPage = () => {
                     </div>
                 </div>
             </div>
-            {/* <Video bannerBg={bannerBg}></Video> */}
+            <Video bannerBg={"qaTB_u1THVs?si=-ml6y9RxehySUgfF"} bannerImage={bannerImage}></Video>
+            
             <div className="feedback__area section-padding">
                 <div className="container">
                     <div className="row mb-30">

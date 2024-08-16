@@ -8,6 +8,7 @@ import Video from '../Video/Video';
 import bannerBg from '../../../assets/img/video.jpg';
 import Work from '../Work/Work';
 import { pageTitle } from '../../PageTitle';
+import bannerImage from "../../../assets/img/video.png"
 
 const HomeOne = () => {
     pageTitle('Metier');
@@ -17,7 +18,7 @@ const HomeOne = () => {
             <Banner></Banner>
             {/* <Features></Features> */}
             <Services></Services>
-            {/* <Video bannerBg={bannerBg}></Video> */}
+            <Video bannerBg="QyhwSYhX09s?si=K327ydkJoh8uphHy" bannerImage={bannerImage}></Video>
             <Work></Work>
             <FooterOne></FooterOne>
         </div>

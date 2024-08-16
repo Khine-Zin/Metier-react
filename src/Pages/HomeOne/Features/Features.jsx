@@ -71,7 +71,7 @@ const Features = () => {
                                         <div className="features__area-item-content-icon">
                                             <Link to={item.href}><i className="fal fa-plus"></i></Link> 
                                         </div>
-                                        <h3><Link to={item.href}>{item.title}</Link></h3>                                    
+                                        <h3 style={{color:"#1776c1"}}><Link to={item.href}>{item.title}</Link></h3>                                    
                                         <p>{item.subtitle}</p>
                                     </div>
                                 </SwiperSlide>

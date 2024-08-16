@@ -15,8 +15,8 @@ const HomeThree = () => {
         <HeaderThree></HeaderThree>            
         <Banner></Banner>
         <Skill></Skill>
-        {/* <PortfolioFilter></PortfolioFilter>
-        <Reviews></Reviews> */}
+        <PortfolioFilter></PortfolioFilter>
+        {/* <Reviews></Reviews> */}
         <Contact></Contact>
         <FooterThree></FooterThree>
         </>

@@ -114,8 +114,8 @@ const ServicesDetails = () => {
                                 <div className="all__sidebar-item-help-contact">
                                     <FaUserCircle style={{color:"white"}} className='footer-icons'/>
                                     <div className="all__sidebar-item-help-contact-content">
-                                        <span>Quick Help</span>
-                                        <h6><a href="tel:+123(458)896895">+123 ( 458 ) 896 895</a></h6>
+                                        <span style={{color:"white"}}>Quick Help</span>
+                                        <h6 ><a href="tel:+123(458)896895">+123 ( 458 ) 896 895</a></h6>
                                     </div>
                                 </div>
                             </div>

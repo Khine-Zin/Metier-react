@@ -5,6 +5,10 @@ import CountUp from 'react-countup';
 import FooterThree from '../Footer/FooterThree';
 import Header from '../Header/HeaderOne';
 import { pageTitle } from '../PageTitle';
+import profile1 from"../../assets/img/profile1.webp"
+import profile2 from"../../assets/img/profile2.jpeg"
+import profile3 from"../../assets/img/profile3.webp"
+import profile5 from"../../assets/img/profile5.webp"
 import brand1 from "../../assets/img/brand/brand-1.png"
 import brand2 from "../../assets/img/brand/brand-2.png"
 import brand3 from "../../assets/img/brand/brand-3.png"
@@ -22,25 +26,25 @@ const AboutPage = () => {
             id: 1,
             name: 'David Beckham',
             title: 'UI Designer',
-            image: 'assets/img/team/team-1.jpg',
+            image:profile1,
         },
         {
             id: 2,
             name: 'Michel Aoun',
             title: 'CEO & Founder',
-            image: 'assets/img/team/team-2.jpg',
+            image:profile2,
         },
         {
             id: 3,
             name: 'Steve Rhodes',
             title: 'Project Manager',
-            image: 'assets/img/team/team-3.jpg',
+            image: profile3,
         },
         {
             id: 4,
             name: 'Cansu Tuman',
             title: 'Senior Designer',
-            image: 'assets/img/team/team-4.jpg',
+            image: profile5,
         },
     ];    
     const counterData = [
@@ -137,7 +141,7 @@ const AboutPage = () => {
                 </div>
             </div>
             </ScrollTrigger>
-            {/* <div className="team__area">
+            <div className="team__area">
                 <div className="container">
                     <div className="row mb-30 team__area-border">
                         <div className="col-xl-12">
@@ -162,15 +166,15 @@ const AboutPage = () => {
                                     </div>
                                 </div>
                                 <div className="team__area-item-content">
-                                    <h5>{item.name}</h5>
-                                    <span>{item.title}</span>
+                                    <h5 style={{color:"#1776c1"}}>{item.name}</h5>
+                                    <span >{item.title}</span>
                                 </div>
                             </div>
                         </div>
                         ))}
                     </div>
                 </div>
-            </div> */}
+            </div>
             <div className="client__area">
                 <div className="container">
                     <div className="row mb-30">

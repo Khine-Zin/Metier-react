@@ -49,8 +49,8 @@ const Blog = () => {
                                 <div className="blog__area-item-content">
                                     <div className="blog__area-item-content-meta">
                                         <ul>
-                                            <li><Link to="#"><i className="fal fa-calendar-alt"></i>{item.date}</Link></li>
-                                            <li><Link to="#"><i className="fal fa-comments"></i>{item.comment}</Link></li>
+                                            <li><Link to="#">{item.date}</Link></li>
+                                            <li><Link to="#">{item.comment}</Link></li>
                                         </ul>
                                     </div>
                                     <h4><Link to={item.href}>{item.title}</Link></h4> 

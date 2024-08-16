@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { Home, News, Page, Portfolio } from "./Menu";
 import DropDown from "./DropDown";
 import logo from "../../assets/img/logo-1.png"
+import { CgLogOff } from "react-icons/cg";
+import { IoMenu } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 
 export default function Header({ variant }) {
     const [isSticky, setIsSticky] = useState(false);
@@ -44,14 +47,14 @@ export default function Header({ variant }) {
                                     </ul>
                                 </DropDown>
                             </li>
-                            {/* <li className="menu-item-has-children">
+                            <li className="menu-item-has-children">
                                 <Link to="">Portfolio</Link>
                                 <DropDown>
                                     <ul className="sub-menu">
                                     <Portfolio />                        
                                     </ul>
                                 </DropDown>
-                            </li> */}
+                            </li>
                             <li className="menu-item-has-children">
                                 <Link to="">News</Link>
                                 <DropDown>
@@ -68,17 +71,17 @@ export default function Header({ variant }) {
                     </div>
                     <div className="header__area-box-sidebar">
                         <div className="header__area-box-sidebar-popup-icon"> 
-                            <span onClick={() => setSideHeaderToggle(!sideHeaderToggle)}><i className="fal fa-bars"></i></span> 
+                            <span style={{color:"white" ,fontSize:"40px",cursor:"pointer"}} onClick={() => setSideHeaderToggle(!sideHeaderToggle)}><IoMenu/></span> 
                         </div>
                     </div>
                     <div className={sideHeaderToggle ? 'header__area-box-sidebar-popup active' : 'header__area-box-sidebar-popup'}>
-                        <div className="sidebar-close-btn one" onClick={() => setSideHeaderToggle(!sideHeaderToggle)}> <i className="fal fa-times"></i> </div>
+                        <div className="sidebar-close-btn one" onClick={() => setSideHeaderToggle(!sideHeaderToggle)}> <RxCross2/> </div>
                         <div className="header__area-box-sidebar-popup-logo">
-                            <Link to='/'><img src="assets/img/logo-1.png" alt="" /></Link>
+                            <Link to='/'><img src={logo} alt="" /></Link>
                         </div>
                         <p>Aliquam nibh tortor, faucibus quis ligula eget, faucibus auctor sapien. Fusce vulputate magna in magna pellentesque in mauris dignissim, imperdiet risus ac, congue nunc.</p>
                         <div className="header__area-box-sidebar-popup-contact">
-                            <h4 className="mb-25">Contact Us</h4>
+                            <h4 style={{color:"#1776c1"}} className="mb-25">Contact Us</h4>
                             <form action="#">
                                 <div className="row">
                                     <div className="col-sm-12 mb-30">
@@ -105,7 +108,7 @@ export default function Header({ variant }) {
                             </form>
                         </div>
                         <div className="header__area-box-sidebar-popup-follow-us">
-                            <h4 className="mb-25">Follow Us</h4>
+                            <h4 style={{color:"#1776c1"}} className="mb-25">Follow Us</h4>
                             <div className="header__area-box-sidebar-popup-follow-us-social">
                                 <ul>
                                     <li><Link to="#"><i className="fab fa-facebook-f"></i></Link> </li>

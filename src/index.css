@@ -64,7 +64,7 @@ input[type=submit] {
   border: 1px solid #272A2A;
   border-color: transparent;
   border-radius: 0px;
-  background: #F94D1D;
+  background: #1776C1;
   color: #FFFFFF;
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -133,7 +133,7 @@ textarea:focus {
   color: #FFFFFF;
   outline: none;
   box-shadow: none;
-  border-color: #F94D1D;
+  border-color: #1776C1;
 }
 
 select {
@@ -2259,7 +2259,7 @@ All Side Bar
 .all__sidebar-item {
   padding: 40px;
   margin-bottom: 30px;
-  background: #1776c120;
+  background: #1776C120;
 }
 .all__sidebar-item:last-child {
   margin: 0;
@@ -2339,13 +2339,13 @@ All Side Bar
   left: 0;
   width: 30px;
   height: 1px;
-  background: #F94D1D;
+  background: #9FA0A1;
 }
 .all__sidebar-item.details {
   margin-left: 40px;
   position: relative;
   z-index: 1;
-  background: #030404;
+  background: #080241;
 }
 .all__sidebar-item.details.one {
   background: transparent;
@@ -2487,7 +2487,10 @@ All Side Bar
   transition: all 0.3s ease-out 0s;
 }
 .all__sidebar-item-help-contact-content h6 a:hover {
-  color: #F94D1D;
+  color: white;
+}
+.all__sidebar-item-help-contact-content h6 a {
+  color: #1776c1;
 }
 
 @media (max-width: 1399px) {
@@ -3424,6 +3427,9 @@ Features
 .features__area-item {
   position: relative;
   z-index: 3;
+  background-color: #050035;
+  border-width: 2px;
+  border: #1776C1;
 }
 .features__area-item::after {
   position: absolute;
@@ -3908,7 +3914,7 @@ Portfolio
 Portfolio Two
 ==========================================================================*/
 .portfolio__area-two {
-  background: #121717;
+  background: #050035;
 }
 .portfolio__area-two-title {
   text-align: center;
@@ -3941,7 +3947,7 @@ Portfolio Two
   left: 0;
   width: 30px;
   height: 1px;
-  background: #F94D1D;
+  background: #1776C1;
 }
 .portfolio__area-two-item-content h4 a {
   display: block;
@@ -3949,7 +3955,7 @@ Portfolio Two
   transition: all 0.4s ease-out 0s;
 }
 .portfolio__area-two-item-content h4 a:hover {
-  color: #F94D1D;
+  color: #1776c1;
 }
 .portfolio__area-two-item:hover .portfolio__area-two-item-content {
   opacity: 1;
@@ -3973,15 +3979,15 @@ Portfolio Two
   background: none;
 }
 .portfolio__area-two-btn button.active {
-  color: #F94D1D;
-  border-bottom: 2px solid #F94D1D;
+  color: #1776C1;
+  border-bottom: 2px solid #1776C1;
 }
 
 /*==========================================================================
 Portfolio Column
 ==========================================================================*/
 .portfolio__column {
-  background: #121717;
+  background: #050035;
 }
 .portfolio__column-item {
   position: relative;
@@ -4012,7 +4018,10 @@ Portfolio Column
   left: 0;
   width: 30px;
   height: 1px;
-  background: #F94D1D;
+  background: #1776c1;
+}
+.portfolio__column-item img{
+  opacity: 0.4;
 }
 .portfolio__column-item-content h4 a {
   display: block;
@@ -4020,7 +4029,7 @@ Portfolio Column
   transition: all 0.4s ease-out 0s;
 }
 .portfolio__column-item-content h4 a:hover {
-  color: #F94D1D;
+  color: #1776C1;
 }
 .portfolio__column-item:hover .portfolio__column-item-content {
   opacity: 1;
@@ -4031,12 +4040,17 @@ Portfolio Column
 Portfolio Column Two
 ==========================================================================*/
 .portfolio__column-two {
-  background: #121717;
+  background: #050035;
 }
 .portfolio__column-two-item {
   position: relative;
 }
+.portfolio__column-two-item img{
+  width: 100%;
+  height: 300px;
+}
 .portfolio__column-two-item-content {
+ 
   position: absolute;
   bottom: 35px;
   transition: all 0.4s ease-out 0s;
@@ -4050,7 +4064,7 @@ Portfolio Column Two
 .portfolio__column-two-item-content span {
   display: inline-block;
   position: relative;
-  color: #030404;
+  color: #FFFFFF;
   text-transform: capitalize;
   z-index: 1;
   padding-left: 40px;
@@ -4062,7 +4076,7 @@ Portfolio Column Two
   left: 0;
   width: 30px;
   height: 1px;
-  background: #F94D1D;
+  background: #1776c1;
 }
 .portfolio__column-two-item-content h4 a {
   display: block;
@@ -4070,7 +4084,7 @@ Portfolio Column Two
   transition: all 0.4s ease-out 0s;
 }
 .portfolio__column-two-item-content h4 a:hover {
-  color: #F94D1D;
+  color: #1776C1;
 }
 .portfolio__column-two-item:hover .portfolio__column-two-item-content {
   opacity: 1;
@@ -4081,10 +4095,11 @@ Portfolio Column Two
 Portfolio Details
 ==========================================================================*/
 .portfolio__details {
-  background: #121717;
+  background: #050035;
 }
 .portfolio__details-left h2 {
   max-width: 600px;
+  color: #1776C1;
 }
 .portfolio__details-image {
   margin-top: -65px;
@@ -4093,7 +4108,7 @@ Portfolio Details
 }
 
 .portfolio__details-two {
-  background: #121717;
+  background: #050035;
 }
 .portfolio__details-two-left-content p {
   max-width: 373px;
@@ -4101,7 +4116,7 @@ Portfolio Details
 .portfolio__details-two-left-details {
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid #3F4144;
+  border-top: 1px solid #1776C1;
 }
 .portfolio__details-two-left-details-list {
   margin-bottom: 30px;
@@ -4120,7 +4135,7 @@ Portfolio Details
   left: 0;
   width: 30px;
   height: 1px;
-  background: #F94D1D;
+  background: #1776C1;
 }
 .portfolio__details-two-left-details-list:last-child {
   margin: 0;
@@ -4600,7 +4615,7 @@ Skill
 }
 .skill__area-left-play-icon {
   position: relative;
-  background: #050035;
+  background: #FFFFFF;
   width: 100px;
   height: 100px;
   line-height: 100px;
@@ -4609,7 +4624,7 @@ Skill
   border-radius: 50%;
 }
 .skill__area-left-play-icon a {
-  color: #030404;
+  color: #1776C1;
   font-size: 25px;
   display: block;
   position: relative;
@@ -4768,7 +4783,7 @@ Skill Twp
 Team
 ==========================================================================*/
 .team__area {
-  background: #121717;
+  background: #050035;
   padding-bottom: 150px;
 }
 .team__area-border {
@@ -4836,8 +4851,8 @@ Team
   border-radius: 50%;
 }
 .team__area-item-image-social ul li a i:hover {
-  background: #F94D1D;
-  border-color: #F94D1D;
+  background: #ffffff;
+  border-color: #ffff;
 }
 .team__area-item-content {
   text-align: center;
@@ -5341,7 +5356,7 @@ Menu Box CSS
   overflow: auto;
   transform: translateX(100%);
   top: 0;
-  background: #17181A;
+  background: #07013b;
   opacity: 0;
   visibility: hidden;
   z-index: 999999;

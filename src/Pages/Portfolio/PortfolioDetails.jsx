@@ -1,7 +1,8 @@
 import React from 'react';
 import FooterThree from '../Footer/FooterThree';
-import Header from '../Header/HeaderFour';
+import Header from '../Header/HeaderOne';
 import { pageTitle } from '../PageTitle';
+import portfolio8 from '../../assets/img/portfolio8.jpg';
 
 const PortfolioDetails = () => {
     pageTitle('Portfolio Details');
@@ -14,18 +15,18 @@ const PortfolioDetails = () => {
                         <div className="col-xl-4 col-lg-4 lg-mb-30">
                             <div className="all__sidebar mr-30 xl-mr-0">
                                 <div className="all__sidebar-item details">
-                                    <h4>Portfolio Details</h4>
+                                    <h4 style={{color:"#1776c1"}}>Portfolio Details</h4>
                                     <div className="all__sidebar-item-details">
                                         <div className="all__sidebar-item-details-list">
-                                            <h6>Client :</h6>
+                                            <h6 style={{color:"#1776c1"}}>Client :</h6>
                                             <span>ThemeOri agency</span>
                                         </div>
                                         <div className="all__sidebar-item-details-list">
-                                            <h6>Category :</h6>
+                                            <h6 style={{color:"#1776c1"}}>Category :</h6>
                                             <span>Brochure Design</span>
                                         </div>
                                         <div className="all__sidebar-item-details-list">
-                                            <h6>Date :</h6>
+                                            <h6 style={{color:"#1776c1"}}>Date :</h6>
                                             <span>27 March, 2023</span>
                                         </div>
                                     </div>
@@ -42,7 +43,7 @@ const PortfolioDetails = () => {
                         </div>
                         <div className="col-xl-12">
                             <div className="portfolio__details-image">
-                                <img src="assets/img/portfolio/details.jpg" alt="" />
+                                <img style={{width:"1920px",height:"640px"}} src={portfolio8} alt="" />
                             </div>
                         </div>
                     </div>

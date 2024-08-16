@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterThree from '../Footer/FooterThree';
-import Header from '../Header/HeaderFour';
+import Header from '../Header/HeaderOne';
 import { pageTitle } from '../PageTitle';
 import PortfolioFilter from './PortfolioFilter';
 

@@ -1,63 +1,69 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
+import portfolio1 from '../../assets/img/portfolio1.jpeg';
+import portfolio2 from '../../assets/img/portfolio2.webp';
+import portfolio3 from '../../assets/img/portfolio3.jpg';
+import portfolio4 from '../../assets/img/portfolio4.jpg';
+import portfolio5 from '../../assets/img/portfolio5.jpg';
+import portfolio6 from '../../assets/img/portfolio6.jpg';
 const ProjectStyleTwoData = [    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-7.jpg',
+        image: portfolio1,
         category: 'strategy',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-8.jpg',
+        image: portfolio2,
         category: 'design',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-9.jpg',
+        image:portfolio3,
         category: 'development',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-10.jpg',
+        image:portfolio4,
         category: 'strategy',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-11.jpg',
+        image: portfolio5,
         category: 'design',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-12.jpg',
+        image:portfolio6,
         category: 'branding',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-13.jpg',
+        image:portfolio3 ,
         category: 'development',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-14.jpg',
+        image:portfolio1,
         category: 'marketing',
     },    
     {
         id: uuidv4(),
-        image: '../../assets/img/portfolio/portfolio-15.jpg',
+        image:portfolio2,
         category: 'marketing',
     },
 ];
 
-const ProjectStyleTwoItem = ({ image }) => {
+const ProjectStyleTwoItem = ({ image ,category}) => {
     return (
         <>
-            <div className="col-lg-4 col-md-6 portfolio-item mt-30">
+            <div className="col-lg-4 col-md-6 portfolio-item mt-30 mb-30">
                 <div className="portfolio__area-two-item"> 
-                    <img className="img__full" src={image} alt="" />
+                    <img style={{height:"250px"}} className="img__full" src={image} alt="" />
 					<div className="portfolio__area-two-item-content"> 
-                        <span>Photography</span>
-						<h4><Link to="/portfolio-details">Photography</Link></h4> 
+                        <span>{category}</span>
+						<h4><Link to="/portfolio-details">{category}</Link></h4> 
                     </div>
 				</div>
             </div>
@@ -89,7 +95,7 @@ const PortfolioFilter = () => {
                     <div className="col-xl-12 mb-30">
                         <div className="portfolio__area-two-title"> 
                             <span className="subtitle-one">Portfolio</span>
-                            <h2>Create Portfolio</h2> 
+                            <h2 style={{color:"white"}}>Create Portfolio</h2> 
                         </div>
                         <div className="portfolio__area-two-btn">
                             <CategoryBtn className={category === 'all' ? 'active' : null} name="all" label="Show All" handleSetCategory={setCategory}/>
@@ -108,6 +114,7 @@ const PortfolioFilter = () => {
                                 <ProjectStyleTwoItem
                                     key={item.id}
                                     image={item.image}
+                                    category={item.category} 
                                 />
                             )
                         )

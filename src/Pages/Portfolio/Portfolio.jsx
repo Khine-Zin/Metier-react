@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import FooterThree from '../Footer/FooterThree';
-import Header from '../Header/HeaderFour';
+import Header from '../Header/HeaderOne';
 import { pageTitle } from '../PageTitle';
+import bannerImage from '../../assets/img/portfolio7.webp';
 
 const Portfolio = () => {
     pageTitle('Portfolio');
@@ -14,7 +15,7 @@ const Portfolio = () => {
                     <div className="row"> 
                         <div className="col-xl-12 mb-30">
                             <div className="portfolio__column-item">
-                                <img className="img__full" src="assets/img/portfolio/column-1.jpg" alt="" />
+                                <img className="img__full" src={bannerImage} alt="" />
                                 <div className="portfolio__column-item-content">
                                     <span>Business Growth</span>
                                     <h4><Link to="/portfolio-details-two">Web Design</Link></h4> 

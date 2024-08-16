@@ -29,7 +29,7 @@ const Banner = () => {
           </h2>
           <p>For Myanmar entrepreneurs aspiring to enter foreign markets and build international-level businesses, eeaio offers comprehensive, high-quality technology solutions.</p>
               <Link className="theme-btn" to="/portfolio-three">
-                All Project <i className="fal fa-long-arrow-right" />
+                All Project 
               </Link>
             </div>
           </div>
